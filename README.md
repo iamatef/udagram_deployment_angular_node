@@ -28,27 +28,16 @@ Manual approval is still needed for CircleCI according to our config!
 
 ## AWS resources
 
-1.RDS Database which the backend uses for storing and retriving the data
+1. RDS Database which the backend uses for storing and retriving the data
 
 ![deploy](https://i.imgur.com/PTMkprG.png)
 
-2.Two S3 buckets, one for the front-end app deployment and another for media storage
+2. Two S3 buckets, one for the front-end app deployment and another for media storage
 ![s3 buckets created](https://i.imgur.com/mqk2243.png)
 
-buckets was set for static site hosting and required policy was attached
-
-![s3 buckets created](https://i.imgur.com/qpzGTME.png)
-
-Cors were set to allow the front-end app to request aws and get image path
-
-![cors enabled](https://i.imgur.com/il4y5IS.png)
-
-3- Elastic beanstalk environmet for deploying the backend API
+  
+3. Elastic beanstalk environmet for deploying the backend API
 ![BeansTalk environment](https://i.imgur.com/569t7lx.png)
-
-Environment variables were set 
-
-![environment variables](https://i.imgur.com/Fr12Vfn.png)
 
  
 ### Dependencies
