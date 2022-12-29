@@ -1,4 +1,4 @@
-### Dependencies
+# APP Dependencies
 
 
 - Node v16.2.0 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version

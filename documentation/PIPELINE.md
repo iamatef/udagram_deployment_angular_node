@@ -1,4 +1,4 @@
-CircleCI Pipeline
+# CircleCI Pipeline
 
 This project repository is connected to circleci.com which will fire the build process for the project with every push to the repo master branch, once the build is successfull, the admin of the CircleCI account must approve for depoloyment. once approved, CircleCI will deply the code to AWS 
 

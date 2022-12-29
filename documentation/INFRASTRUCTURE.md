@@ -1,4 +1,4 @@
-## APP Diagram
+# APP Infrastructure and Diagram
 Visitors visit the app from the S3 bucket holding the static front-end files after building the Angular APP, this front-end then connects to the backedn API which is a NodeJS App that we build and deply to an ElasticBeanstalk environment, an S3 bucked is used for storing media upladed by the APP users
 
 ![APP Diagram](https://i.imgur.com/mqi2lG8.png)
