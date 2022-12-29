@@ -12,10 +12,10 @@
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "npm run build && eb list && eb use udagram-api-pro && npm run setenv && eb deploy",
+    "deploy": "npm run build && eb list && eb use udagram-api-pro && eb deploy && npm run setenv ",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setenv": "eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD"
+    "setenv": "eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD AWS_BUCKET=$AWS_BUCKET AWS_PROFILE=$AWS_PROFILE AWS_REGION=$AWS_REGION JWT_SECRET=$JWT_SECRET POSTGRES_HOST=$POSTGRES_HOST POSTGRES_USERNAME=$POSTGRES_USERNAME URL=$URL POSTGRES_DB=$POSTGRES_DB"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
